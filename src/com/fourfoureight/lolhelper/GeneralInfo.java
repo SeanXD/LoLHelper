@@ -67,6 +67,7 @@ public class GeneralInfo extends ActionBarActivity {
     public void ingame(View view) {
     	Intent intent = new Intent(this, InGame.class);
     	startActivity(intent);
+    	finish();
     }
     
     public void items(View view) {
@@ -83,18 +84,19 @@ public class GeneralInfo extends ActionBarActivity {
     public void championselect(View view) {
     	Intent intent = new Intent(this, ChampionSelect.class);
     	startActivity(intent);
+    	finish();
     }
     
     /** Called when the user clicks the Post Game button */
     public void postgame(View view) {
     	Intent intent = new Intent(this, PostGame.class);
     	startActivity(intent);
+    	finish();
     }
     
     /** Called when the user clicks the General Info button */
     public void generalinfo(View view) {
-    	Intent intent = new Intent(this, MainActivity.class);
-    	startActivity(intent);
+    	finish();
     }
     
     /** Called when the user clicks the Options button */

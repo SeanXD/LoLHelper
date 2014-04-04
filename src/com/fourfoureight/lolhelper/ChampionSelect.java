@@ -65,12 +65,12 @@ public class ChampionSelect extends ActionBarActivity {
     public void ingame(View view) {
     	Intent intent = new Intent(this, InGame.class);
     	startActivity(intent);
+    	finish();
     }
     
     /** Called when the user clicks the Champion Select button */
     public void championselect(View view) {
-    	Intent intent = new Intent(this, MainActivity.class);
-    	startActivity(intent);
+    	finish();
     }
     
     public void teambuilder(View view) {
@@ -87,12 +87,14 @@ public class ChampionSelect extends ActionBarActivity {
     public void postgame(View view) {
     	Intent intent = new Intent(this, PostGame.class);
     	startActivity(intent);
+    	finish();
     }
     
     /** Called when the user clicks the General Info button */
     public void generalinfo(View view) {
     	Intent intent = new Intent(this, GeneralInfo.class);
     	startActivity(intent);
+    	finish();
     }
     
     /** Called when the user clicks the Options button */

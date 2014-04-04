@@ -63,14 +63,14 @@ public class InGame extends ActionBarActivity {
 	}
 	
     public void ingame(View view) {
-    	Intent intent = new Intent(this, MainActivity.class);
-    	startActivity(intent);
+    	finish();
     }
     
     /** Called when the user clicks the Champion Select button */
     public void championselect(View view) {
     	Intent intent = new Intent(this, ChampionSelect.class);
     	startActivity(intent);
+    	finish();
     }
     
     public void matchinfo(View view) {
@@ -87,12 +87,14 @@ public class InGame extends ActionBarActivity {
     public void postgame(View view) {
     	Intent intent = new Intent(this, PostGame.class);
     	startActivity(intent);
+    	finish();
     }
     
     /** Called when the user clicks the General Info button */
     public void generalinfo(View view) {
     	Intent intent = new Intent(this, GeneralInfo.class);
     	startActivity(intent);
+    	finish();
     }
     
     /** Called when the user clicks the Options button */

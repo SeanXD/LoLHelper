@@ -1,4 +1,3 @@
-
 public class ChampionInfo {
 
 // Name, Title, and Roles
@@ -23,6 +22,7 @@ private double magicRes;
 //Health and Magic Stats
 private double healthPerLevel;
 private double healthRegenPerLevel;
+private String typeOfMana; //could be energy or mana
 private double manaPerLevel;
 private double manaRegenPerLevel;
 private double attackDamPerLevel;
@@ -130,15 +130,22 @@ public void setHealthInfo(double heal, double healGrowth, double healreg, double
 	healthRegen = healreg;
 	healthRegenPerLevel = healregGrowth; 
 }
-public void setManaInfo(double mn, double mnGrowth, double mnreg, double mnregGrowth, double magRes, double magResGrowth)
+public void setManaInfo(double mn, double mnGrowth, double mnreg, double mnregGrowth, String typeMana)
 {
 	mana = mn;
 	manaPerLevel = mnGrowth;
 	manaRegen = mnreg;
 	manaRegenPerLevel = mnregGrowth;
-	magicRes = magRes;
+	typeOfMana = typeMana;
+}
+
+public void setMagicResInfo(double magRes, double magResGrowth)
+{
+		magicRes = magRes;
 	magicResPerLevel = magResGrowth; 
 }
+
+
 
 public void setSpells(SpellInfo spellArray [] )
 {
@@ -256,6 +263,10 @@ public double getHealthRegenPerLevel()
 
 
 //Mana Info
+public double getTypeOfMana()
+{
+	return typeOfMana;
+}
 public double getMana()
 {
 	return mana;

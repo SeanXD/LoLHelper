@@ -310,4 +310,4 @@ public SpellInfo[] getSpells()
 {
 	return spells;
 }
-
+}

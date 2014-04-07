@@ -263,7 +263,7 @@ public double getHealthRegenPerLevel()
 
 
 //Mana Info
-public double getTypeOfMana()
+public String getTypeOfMana()
 {
 	return typeOfMana;
 }

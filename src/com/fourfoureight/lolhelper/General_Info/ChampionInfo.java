@@ -139,7 +139,7 @@ public void setManaInfo(double mn, double mnGrowth, double mnreg, double mnregGr
 	typeOfMana = typeMana;
 }
 
-public void setMagicResInfo(double magRes, double magResGrowth)
+public void setMagicRes(double magRes, double magResGrowth)
 {
 		magicRes = magRes;
 	magicResPerLevel = magResGrowth; 

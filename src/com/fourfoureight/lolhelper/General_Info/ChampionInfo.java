@@ -1,5 +1,4 @@
 
-
 public class ChampionInfo {
 
 // Name, Title, and Roles

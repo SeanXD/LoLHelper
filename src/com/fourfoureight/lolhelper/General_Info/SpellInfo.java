@@ -4,7 +4,7 @@ private String name;
 private String description;
 private int cost [];
 private String costType;
-private double cooldown;
+private double cooldown [];
 
 private int range;
 private String statsPerLevel [];
@@ -29,9 +29,16 @@ public void setDescription(String des)
 {
 	description = des; 
 }
-public void setCoolDown(double cool)
+public void setCoolDown(double cool [])
 {
-	cooldown = cool;
+	cooldown = new double[cool.length];
+	
+	for(int i = 0; i < cooldown.length; i++)
+	{
+		cooldown[i] = cool[i];
+	}
+	
+
 }
 public void setSpellRange(int spellRange)
 {

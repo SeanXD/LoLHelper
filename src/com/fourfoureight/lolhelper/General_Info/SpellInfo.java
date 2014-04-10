@@ -2,7 +2,7 @@ public class SpellInfo {
 
 private String name;
 private String description;
-private int cost [];
+private String cost;
 private String costType;
 private double cooldown [];
 
@@ -18,6 +18,31 @@ public SpellInfo()
 	cooldown = 0; 
 	range = 0; 	
 }
+
+
+public SpellInfo(String n, String cos, double cd [], int r, String sPL[], String d)
+{
+	name = n;
+	description = d;
+	costType = cosTy; 
+	range = r; 
+	
+	cooldown = new double[cd.length];
+	for(int i = 0; i < cooldown.length; i++)
+	{
+		cooldown[i] = cd[i];
+	}
+			
+	statsPerLevel = new String[sPL.length];
+	for(int i = 0; i < statsPerLevel.length; i++)
+	{
+		statsPerLevel[i] = sPL[i];
+	}
+		
+	cost = cos;	
+}
+
+
 
 // setters for Spell Info
 public void setSpellName(String namer)

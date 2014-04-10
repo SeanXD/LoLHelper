@@ -1,10 +1,11 @@
+
 public class SpellInfo {
 
 private String name;
 private String description;
 private String cost;
 private String costType;
-private double cooldown [];
+private String cooldown;
 
 private int range;
 private String statsPerLevel [];
@@ -13,25 +14,20 @@ private String statsPerLevel [];
 
 public SpellInfo()
 {
-	name = null;
-	description = null;
-	cooldown = 0; 
+	name = "";
+	description = "";
+	cooldown = ""; 
 	range = 0; 	
 }
 
-
-public SpellInfo(String n, String cos, double cd [], int r, String sPL[], String d)
+public SpellInfo(String n, String cos, String cd, int r, String cosTy, String sPL[], String d)
 {
 	name = n;
 	description = d;
 	costType = cosTy; 
 	range = r; 
-	
-	cooldown = new double[cd.length];
-	for(int i = 0; i < cooldown.length; i++)
-	{
-		cooldown[i] = cd[i];
-	}
+		
+	cooldown = cd;
 			
 	statsPerLevel = new String[sPL.length];
 	for(int i = 0; i < statsPerLevel.length; i++)
@@ -39,10 +35,8 @@ public SpellInfo(String n, String cos, double cd [], int r, String sPL[], String
 		statsPerLevel[i] = sPL[i];
 	}
 		
-	cost = cos;	
+		cost = cos;
 }
-
-
 
 // setters for Spell Info
 public void setSpellName(String namer)
@@ -54,16 +48,9 @@ public void setDescription(String des)
 {
 	description = des; 
 }
-public void setCoolDown(double cool [])
+public void setCoolDown(String cool)
 {
-	cooldown = new double[cool.length];
-	
-	for(int i = 0; i < cooldown.length; i++)
-	{
-		cooldown[i] = cool[i];
-	}
-	
-
+	cooldown = cool;
 }
 public void setSpellRange(int spellRange)
 {
@@ -72,24 +59,17 @@ public void setSpellRange(int spellRange)
 public void setStatsPerLevel(String stats [])
 {
 	statsPerLevel = new String[stats.length];
-
+	
 	for(int i = 0; i < stats.length; i++)
 	{
-
+		
 		statsPerLevel[i] = stats[i];
-
+		
 	}
 }
-public void setCost(int costOf [])
+public void setCost(String costOf)
 {
-	cost = new int[costOf.length];
-
-	for(int i = 0; i < costOf.length; i++)
-	{
-
-		cost[i] = costOf[i];
-
-	}
+	cost = costOf;
 }
 public void setCostType(String cosType)
 {
@@ -105,7 +85,7 @@ public String getDescription()
 {
 	return description;
 }
-public double getCoolDown()
+public String getCoolDown()
 {
 	return cooldown;
 }
@@ -119,7 +99,7 @@ public String[] getStatsPerLevel()
 }
 
 // Cost Info
-public int[] getCost()
+public String getCost()
 {
 	return cost;
 }

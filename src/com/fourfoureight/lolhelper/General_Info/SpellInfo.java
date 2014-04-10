@@ -1,10 +1,9 @@
-
 public class SpellInfo {
 
 private String name;
 private String description;
 private String cost;
-private String costType;
+
 private String cooldown;
 
 private int range;
@@ -20,11 +19,11 @@ public SpellInfo()
 	range = 0; 	
 }
 
-public SpellInfo(String n, String cos, String cd, int r, String cosTy, String sPL[], String d)
+public SpellInfo(String n, String cos, String cd, int r, String sPL[], String d)
 {
 	name = n;
 	description = d;
-	costType = cosTy; 
+	
 	range = r; 
 		
 	cooldown = cd;
@@ -71,10 +70,6 @@ public void setCost(String costOf)
 {
 	cost = costOf;
 }
-public void setCostType(String cosType)
-{
-	costType = cosType;
-}
 
 // getters for Spell Info
 public String getSpellName()
@@ -102,10 +97,6 @@ public String[] getStatsPerLevel()
 public String getCost()
 {
 	return cost;
-}
-public String getCostType()
-{
-	return costType;
 }
 
 

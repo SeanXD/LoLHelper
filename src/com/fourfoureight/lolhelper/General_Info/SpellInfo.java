@@ -1,7 +1,7 @@
 public class SpellInfo {
 
 private String name;
-private String description;
+private String description [];
 private String cost;
 
 private String cooldown;
@@ -14,19 +14,22 @@ private String statsPerLevel [];
 public SpellInfo()
 {
 	name = "";
-	description = "";
 	cooldown = ""; 
 	range = 0; 	
 }
 
-public SpellInfo(String n, String cos, String cd, int r, String sPL[], String d)
+public SpellInfo(String n, int r, String cd, String cos, String sPL[], String d[])
 {
 	name = n;
-	description = d;
-	
 	range = r; 
-		
 	cooldown = cd;
+	
+	description = new String[d.length];
+	for(int i = 0; i < description.length; i++)
+	{
+		description[i] = d[i];
+	}
+	
 			
 	statsPerLevel = new String[sPL.length];
 	for(int i = 0; i < statsPerLevel.length; i++)
@@ -43,9 +46,13 @@ public void setSpellName(String namer)
 	name = namer;
 }
 
-public void setDescription(String des)
+public void setDescription(String d [])
 {
-	description = des; 
+	description = new String[d.length];
+	for(int i = 0; i < description.length; i++)
+	{
+		description[i] = d[i];
+	}
 }
 public void setCoolDown(String cool)
 {
@@ -76,7 +83,7 @@ public String getSpellName()
 {
 	return name;
 }
-public String getDescription()
+public String[] getDescription()
 {
 	return description;
 }

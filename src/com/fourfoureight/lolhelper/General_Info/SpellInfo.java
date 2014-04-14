@@ -1,12 +1,11 @@
 public class SpellInfo {
 
 private String name;
-private String description [];
 private String cost;
-
 private String cooldown;
-
 private String range;
+
+private String description [];
 private String statsPerLevel [];
 
 //We need to figure out how we will be displaying the spell image: URL or storing the image in our app
@@ -15,7 +14,9 @@ public SpellInfo()
 {
 	name = "";
 	cooldown = ""; 
-	range = 0; 	
+	range = ""; 
+	cost = "";
+	
 }
 
 public SpellInfo(String n, String r, String cd, String cos, String sPL[], String d[])

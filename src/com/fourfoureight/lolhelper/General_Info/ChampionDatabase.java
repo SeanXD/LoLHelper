@@ -555,6 +555,534 @@ public class ChampionDatabase {
 		//.setSpells
 
 
+		/*
+		 * 
+		 * Section 3 Champions
+		 * 
+		 * - Must add Spell setters
+		*/
+		
+		
+		ChampionInfo Shen = new ChampionInfo();
+		Shen.setNameTitle("Shen", "Eye of Twilight");
+		Shen.setTypes("Tank", "Fighter");
+		Shen.setInfo(3, 9, 3, 3);
+		Shen.setAttackDam(54.5, 3.375);
+		Shen.setAttackSpeed(0.651, 3.4);
+		Shen.setArmor(19, 4);
+		Shen.setRange(125, "Melee");
+		Shen.setMoveSpeed(335);
+		Shen.setHealthInfo(428, 85, 7.45, 0.55);
+		Shen.setManaInfo(200, 0, 50, 0, "Energy");
+		Shen.setMagicRes(30, 0);
+		
+		ChampionInfo Shyvana = new ChampionInfo();
+		Shyvana.setNameTitle("Shyvana", "the Half-Dragon"); // Should we capitalize the the?
+		Shyvana.setTypes("Fighter", "Tank");
+		Shyvana.setInfo(8, 6, 3, 4);
+		Shyvana.setAttackDam(55, 3.4);
+		Shyvana.setAttackSpeed(0.658, 2.5);
+		Shyvana.setArmor(22, 3.35);
+		Shyvana.setRange(125, "Melee");
+		Shyvana.setMoveSpeed(350);
+		Shyvana.setHealthInfo(435, 95, 7.25, 0.8);
+		Shyvana.setManaInfo(100, 0, 0, 0, "Fury");  // How do we handle lack of info?
+		Shyvana.setMagicRes(30, 1.25);
+		
+		ChampionInfo Singed = new ChampionInfo();
+		Singed.setNameTitle("Singed", "the Mad Chemist");
+		Singed.setTypes("Tank", "Fighter");
+		Singed.setInfo(4, 8, 7, 5);
+		Singed.setAttackDam(56.65, 3.375);
+		Singed.setAttackSpeed(0.613, 1.81);
+		Singed.setArmor(22, 3.5);
+		Singed.setRange(125, "Melee");
+		Singed.setMoveSpeed(345);
+		Singed.setHealthInfo(405, 82, 7.1, 0.55);
+		Singed.setManaInfo(215, 45, 6.6, 0.55, "Mana");
+		Singed.setMagicRes(30, 0);
+		
+		ChampionInfo Sion = new ChampionInfo();
+		Sion.setNameTitle("Sion", "the Undead Champion");
+		Sion.setTypes("Fighter", "Mage");
+		Sion.setInfo(5, 8, 7, 4);
+		Sion.setAttackDam(55.52, 3.188);
+		Sion.setAttackSpeed(0.625, 1.63);
+		Sion.setArmor(21.75, 3.25);
+		Sion.setRange(125, "Melee");
+		Sion.setMoveSpeed(345);
+		Sion.setHealthInfo(403, 104, 7.9, 0.95);
+		Sion.setManaInfo(200, 40, 6.3, 0.4, "Mana");
+		Sion.setMagicRes(30, 1.25);
+		
+		ChampionInfo Sivir = new ChampionInfo();
+		Sivir.setNameTitle("Sivir", "the Battle Mistress");
+		Sivir.setTypes("Marksman", ""); // How do we handle one type?
+		Sivir.setInfo(9, 3, 1, 3);
+		Sivir.setAttackDam(49, 3);
+		Sivir.setAttackSpeed(0.658, 1.6);
+		Sivir.setArmor(16.75, 3.25);
+		Sivir.setRange(500, "Ranged");
+		Sivir.setMoveSpeed(335);
+		Sivir.setHealthInfo(378, 82, 4.25, 0.55);
+		Sivir.setManaInfo(203, 43, 6.5, 0.5, "Mana");
+		Sivir.setMagicRes(30, 0);
+		
+		ChampionInfo Skarner = new ChampionInfo();
+		Skarner.setNameTitle("Skarner", "the Crystal Vanguard");
+		Skarner.setTypes("Fighter", "Tank");
+		Skarner.setInfo(7, 6, 5, 5);
+		Skarner.setAttackDam(54.1, 4.2);
+		Skarner.setAttackSpeed(0.625, 2.1);
+		Skarner.setArmor(23, 3.8);
+		Skarner.setRange(125, "Melee");
+		Skarner.setMoveSpeed(345);
+		Skarner.setHealthInfo(440, 96, 7.5, 0.85);
+		Skarner.setManaInfo(205, 40, 6.45, 0.45, "Mana");
+		Skarner.setMagicRes(30, 1.25);
+		
+		ChampionInfo Sona = new ChampionInfo();
+		Sona.setNameTitle("Sona", "Maven of the Strings");
+		Sona.setTypes("Support", "Mage");
+		Sona.setInfo(5, 2, 8, 1);
+		Sona.setAttackDam(47, 3);
+		Sona.setAttackSpeed(0.644, 2.3);
+		Sona.setArmor(12, 3.3);
+		Sona.setRange(550, "Ranged");
+		Sona.setMoveSpeed(330);
+		Sona.setHealthInfo(380, 70, 4.5, 0.55);
+		Sona.setManaInfo(265, 45, 7, 0.65, "Mana");
+		Sona.setMagicRes(30, 0);
+		
+		ChampionInfo Soraka = new ChampionInfo();
+		Soraka.setNameTitle("Soraka", "the Starchild");
+		Soraka.setTypes("Support", "Mage");
+		Soraka.setInfo(2, 5, 7, 3);
+		Soraka.setAttackDam(48.8, 3);
+		Soraka.setAttackSpeed(0.625, 2.14);
+		Soraka.setArmor(17, 3.8);
+		Soraka.setRange(550, "Ranged");
+		Soraka.setMoveSpeed(340);
+		Soraka.setHealthInfo(405, 76, 4.5, 0.55);
+		Soraka.setManaInfo(240, 60, 6.8, 0.65, "Mana");
+		Soraka.setMagicRes(30, 0);
+		
+		ChampionInfo Swain = new ChampionInfo();
+		Swain.setNameTitle("Swain", "the Master Tactician");
+		Swain.setTypes("Mage", "Fighter");
+		Swain.setInfo(2, 6, 9, 5);
+		Swain.setAttackDam(49, 3);
+		Swain.setAttackSpeed(0.625, 2.11);
+		Swain.setArmor(16, 4);
+		Swain.setRange(500, "Ranged");
+		Swain.setMoveSpeed(335);
+		Swain.setHealthInfo(385, 78, 6.75, 0.65);
+		Swain.setManaInfo(240, 50, 6.8, 0.65, "Mana");
+		Swain.setMagicRes(30, 0);
+		
+		ChampionInfo Syndra = new ChampionInfo();
+		Syndra.setNameTitle("Syndra", "the Dark Sovereign");
+		Syndra.setTypes("Mage", "Support");
+		Syndra.setInfo(2, 3, 9, 10);
+		Syndra.setAttackDam(51, 2.9);
+		Syndra.setAttackSpeed(0.625, 2);
+		Syndra.setArmor(19, 3.4);
+		Syndra.setRange(550, "Ranged");
+		Syndra.setMoveSpeed(330);
+		Syndra.setHealthInfo(380, 78, 5.5, 0.6);
+		Syndra.setManaInfo(250, 50, 6.9, 0.6, "Mana");
+		Syndra.setMagicRes(30, 0);
+		
+		ChampionInfo Talon = new ChampionInfo();
+		Talon.setNameTitle("Talon", "the Blade's Shadow");
+		Talon.setTypes("Assassin", "Fighter");
+		Talon.setInfo(9, 3, 1, 6);
+		Talon.setAttackDam(50, 3.1);
+		Talon.setAttackSpeed(0.668, 2.7);
+		Talon.setArmor(21, 3.5);
+		Talon.setRange(125, "Melee");
+		Talon.setMoveSpeed(350);
+		Talon.setHealthInfo(440, 85, 7.25, 0.75);
+		Talon.setManaInfo(260, 40, 6.75, 0.5, "Mana");
+		Talon.setMagicRes(30, 1.25);
+		
+		ChampionInfo Taric = new ChampionInfo();
+		Taric.setNameTitle("Taric", "the Gem Knight");
+		Taric.setTypes("Support", "Fighter");
+		Taric.setInfo(4, 8, 5, 3);
+		Taric.setAttackDam(52, 3.5);
+		Taric.setAttackSpeed(0.625, 2.02);
+		Taric.setArmor(20.5, 3.2);
+		Taric.setRange(125, "Melee");
+		Taric.setMoveSpeed(340);
+		Taric.setHealthInfo(468, 90, 7.1, 0.5);
+		Taric.setManaInfo(255, 56, 4.1, 0.4, "Mana");
+		Taric.setMagicRes(30, 1.25);
+		
+		ChampionInfo Teemo = new ChampionInfo();
+		Teemo.setNameTitle("Teemo", "the Swift Scout");
+		Teemo.setTypes("Marksman", "Assassin");
+		Teemo.setInfo(5, 3, 7, 4);
+		Teemo.setAttackDam(44.5, 3);
+		Teemo.setAttackSpeed(0.69, 3.38);
+		Teemo.setArmor(18, 3.75);
+		Teemo.setRange(500, "Ranged");
+		Teemo.setMoveSpeed(330);
+		Teemo.setHealthInfo(378, 82, 4.65, 0.65);
+		Teemo.setManaInfo(200, 40, 6.45, 0.45, "Mana");
+		Teemo.setMagicRes(30, 0);
+		
+		ChampionInfo Thresh = new ChampionInfo();
+		Thresh.setNameTitle("Thresh", "the Chain Warden");
+		Thresh.setTypes("Support", "Fighter");
+		Thresh.setInfo(5, 6, 6, 7);
+		Thresh.setAttackDam(46, 2,2);
+		Thresh.setAttackSpeed(0.625, 3.5);
+		Thresh.setArmor(16, 0);
+		Thresh.setRange(450, "Ranged");
+		Thresh.setMoveSpeed(335);
+		Thresh.setHealthInfo(411, 89, 6, 0.55);
+		Thresh.setManaInfo(200, 44, 5, 0.7, "Mana");
+		Thresh.setMagicRes(30, 0);
+		
+		ChampionInfo Tristana = new ChampionInfo();
+		Tristana.setNameTitle("Tristana", "the Megling Gunner");
+		Tristana.setTypes("Marksman", "Assassin");
+		Tristana.setInfo(9, 3, 5, 3);
+		Tristana.setAttackDam(46.5, 3);
+		Tristana.setAttackSpeed(0.656, 4);
+		Tristana.setArmor(19, 3);
+		Tristana.setRange(550, "Ranged");
+		Tristana.setMoveSpeed(325);
+		Tristana.setHealthInfo(415, 82, 5.1, 0.65);
+		Tristana.setManaInfo(193, 32, 6.45, 0.45, "Mana");
+		Tristana.setMagicRes(30, 0);
+		
+		ChampionInfo Trundle = new ChampionInfo();
+		Trundle.setNameTitle("Trundle", "the Troll King");
+		Trundle.setTypes("Fighter", "Tank");
+		Trundle.setInfo(7, 6, 2, 5);
+		Trundle.setAttackDam(55, 3);
+		Trundle.setAttackSpeed(0.67, 2.9);
+		Trundle.setArmor(23, 2.7);
+		Trundle.setRange(125, "Melee");
+		Trundle.setMoveSpeed(350);
+		Trundle.setHealthInfo(455, 96, 8, 0.85);
+		Trundle.setManaInfo(206, 45, 6.5, 0.6, "Mana");
+		Trundle.setMagicRes(30, 1.25);
+		
+		ChampionInfo Tryndamere = new ChampionInfo();
+		Tryndamere.setNameTitle("Tryndamere", "the Barbarian King");
+		Tryndamere.setTypes("Fighter", "Assassin");
+		Tryndamere.setInfo(10, 5, 2, 6);
+		Tryndamere.setAttackDam(56, 3.2);
+		Tryndamere.setAttackSpeed(0.67, 2.9);
+		Tryndamere.setArmor(18.9, 3.1);
+		Tryndamere.setRange(125, "Melee");
+		Tryndamere.setMoveSpeed(345);
+		Tryndamere.setHealthInfo(461, 98, 7, 0.9);
+		Tryndamere.setManaInfo(100, 0, 0, 0, "Fury");
+		Tryndamere.setMagicRes(30, 1.25);
+		
+		ChampionInfo TwistedFate = new ChampionInfo();
+		TwistedFate.setNameTitle("Twisted Fate", "the Card Master");
+		TwistedFate.setTypes("Mage", "");
+		TwistedFate.setInfo(6, 2, 6, 9);
+		TwistedFate.setAttackDam(46.41, 3.3);
+		TwistedFate.setAttackSpeed(0.651, 3.22);
+		TwistedFate.setArmor(15.25, 3.15);
+		TwistedFate.setRange(525, "Ranged");
+		TwistedFate.setMoveSpeed(330);
+		TwistedFate.setHealthInfo(384, 82, 4.5, 0.6);
+		TwistedFate.setManaInfo(202, 38, 6.5, 0.5, "Mana");
+		TwistedFate.setMagicRes(30, 0);
+		
+		ChampionInfo Twitch = new ChampionInfo();
+		Twitch.setNameTitle("Twitch", "the Plague Rat");
+		Twitch.setTypes("Marksman", "Assassin");
+		Twitch.setInfo(9, 2, 3, 8);
+		Twitch.setAttackDam(49, 3);
+		Twitch.setAttackSpeed(0.679, 3.38);
+		Twitch.setArmor(18, 3);
+		Twitch.setRange(550, "Ranged");
+		Twitch.setMoveSpeed(330);
+		Twitch.setHealthInfo(389, 81, 5, 0.6);
+		Twitch.setManaInfo(220, 40, 6.5, 0.45, "Mana");
+		Twitch.setMagicRes(30, 0);
+		
+		ChampionInfo Udyr = new ChampionInfo();
+		Udyr.setNameTitle("Udyr", "the Spirit Walker");
+		Udyr.setTypes("Fighter", "Tank");
+		Udyr.setInfo(8, 7, 4, 5);
+		Udyr.setAttackDam(52.91, 3.2);
+		Udyr.setAttackSpeed(0.658, 2.67);
+		Udyr.setArmor(18.75, 4);
+		Udyr.setRange(125, "Melee");
+		Udyr.setMoveSpeed(345);
+		Udyr.setHealthInfo(427, 99, 7.45, 0.75);
+		Udyr.setManaInfo(220, 30, 6.75, 0.45, "Mana");
+		Udyr.setMagicRes(30, 1.25);
+		
+		ChampionInfo Urgot = new ChampionInfo();
+		Urgot.setNameTitle("Urgot", "the Headsman's Pride");
+		Urgot.setTypes("Marksman", "Tank");
+		Urgot.setInfo(8, 5, 3, 8);
+		Urgot.setAttackDam(48, 3.6);
+		Urgot.setAttackSpeed(0.644, 2.9);
+		Urgot.setArmor(19, 3.3);
+		Urgot.setRange(425, "Ranged");
+		Urgot.setMoveSpeed(335);
+		Urgot.setHealthInfo(437, 89, 5.5, 0.6);
+		Urgot.setManaInfo(220, 55, 7.5, 0.65, "Mana");
+		Urgot.setMagicRes(30, 0);
+		
+		ChampionInfo Varus = new ChampionInfo();
+		Varus.setNameTitle("Varus", "the Arrow of Retribution");
+		Varus.setTypes("Marksman", "Mage");
+		Varus.setInfo(7, 3, 4, 6);
+		Varus.setAttackDam(46, 3);
+		Varus.setAttackSpeed(0.658, 3);
+		Varus.setArmor(17.5, 3.4);
+		Varus.setRange(575, "Ranged");
+		Varus.setMoveSpeed(330);
+		Varus.setHealthInfo(400, 82, 4.5, 0.55);
+		Varus.setManaInfo(250, 36, 6.5, 0.5, "Mana");
+		Varus.setMagicRes(30, 0);
+		
+		ChampionInfo Vayne = new ChampionInfo();
+		Vayne.setNameTitle("Vayne", "the Night Hunter");
+		Vayne.setTypes("Marksman", "Assassin");
+		Vayne.setInfo(10, 1, 1, 7);
+		Vayne.setAttackDam(50, 3.25);
+		Vayne.setAttackSpeed(0.658, 3.1);
+		Vayne.setArmor(13.3, 3.4);
+		Vayne.setRange(550, "Ranged");
+		Vayne.setMoveSpeed(330);
+		Vayne.setHealthInfo(359, 83, 4.5, 0.55);
+		Vayne.setManaInfo(173, 35, 6.3, 0.4, "Mana");
+		Vayne.setMagicRes(30, 0);
+		
+		ChampionInfo Veigar = new ChampionInfo();
+		Veigar.setNameTitle("Veigar", "the Tiny Master of Evil");
+		Veigar.setTypes("Mage", "");
+		Veigar.setInfo(2, 2, 10, 6);
+		Veigar.setAttackDam(48.3, 2.625);
+		Veigar.setAttackSpeed(0.625, 2.24);
+		Veigar.setArmor(16.25, 3.75);
+		Veigar.setRange(525, "Ranged");
+		Veigar.setMoveSpeed(340);
+		Veigar.setHealthInfo(355, 82, 4.5, 0.55);
+		Veigar.setManaInfo(250, 55, 6.9, 0.6, "Mana");
+		Veigar.setMagicRes(30, 0);
+		
+		ChampionInfo Velkoz = new ChampionInfo();
+		Velkoz.setNameTitle("Vel'koz", "the Eye of the Void");
+		Velkoz.setTypes("Mage", "");
+		Velkoz.setInfo(2, 2, 10, 8);
+		Velkoz.setAttackDam(51.66, 3.142);
+		Velkoz.setAttackSpeed(0.625, 1.36);
+		Velkoz.setArmor(16, 3.5);
+		Velkoz.setRange(525, "Ranged");
+		Velkoz.setMoveSpeed(340);
+		Velkoz.setHealthInfo(380, 76, 4.5, 0.55);
+		Velkoz.setManaInfo(250, 45, 7, 0.6, "Mana");
+		Velkoz.setMagicRes(30, 0);
+		
+		ChampionInfo Vi = new ChampionInfo();
+		Vi.setNameTitle("Vi", "the Piltover Enforcer");
+		Vi.setTypes("Fighter", "Assassin");
+		Vi.setInfo(8, 5, 3, 5);
+		Vi.setAttackDam(50, 3.5);
+		Vi.setAttackSpeed(0.644, 2.5);
+		Vi.setArmor(20, 3.5);
+		Vi.setRange(125, "Melee");
+		Vi.setMoveSpeed(350);
+		Vi.setHealthInfo(440, 85, 7.5, 0.9);
+		Vi.setManaInfo(220, 45, 7, 0.65, "Mana");
+		Vi.setMagicRes(30, 1.25);
+		
+		ChampionInfo Viktor = new ChampionInfo();
+		Viktor.setNameTitle("Viktor", "the Machine Herald");
+		Viktor.setTypes("Mage", "");
+		Viktor.setInfo(2, 5, 9, 9);
+		Viktor.setAttackDam(49, 3);
+		Viktor.setAttackSpeed(0.625, 2.11);
+		Viktor.setArmor(16, 4);
+		Viktor.setRange(525, "Ranged");
+		Viktor.setMoveSpeed(335);
+		Viktor.setHealthInfo(385, 78, 6.75, 0.65);
+		Viktor.setManaInfo(240, 50, 6.9, 0.45, "Mana");
+		Viktor.setMagicRes(30, 0);
+		
+		ChampionInfo Vladimir = new ChampionInfo();
+		Vladimir.setNameTitle("Vladimir", "the Crimson Reaper");
+		Vladimir.setTypes("Mage", "Tank");
+		Vladimir.setInfo(2, 6, 8, 2);
+		Vladimir.setAttackDam(45, 3);
+		Vladimir.setAttackSpeed(0.658, 2);
+		Vladimir.setArmor(16, 3.5);
+		Vladimir.setRange(450, "Ranged");
+		Vladimir.setMoveSpeed(335);
+		Vladimir.setHealthInfo(400, 85, 6, 0.6);
+		Vladimir.setManaInfo(0, 0, 0, 0, "Health"); // another tricky one
+		Vladimir.setMagicRes(30, 0);
+		
+		ChampionInfo Volibear = new ChampionInfo();
+		Volibear.setNameTitle("Volibear", "the Thunder's Roar");
+		Volibear.setTypes("Fighter", "Tank");
+		Volibear.setInfo(7, 7, 4, 2);
+		Volibear.setAttackDam(54, 3.3);
+		Volibear.setAttackSpeed(0.658, 2.67);
+		Volibear.setArmor(20.5, 3.5);
+		Volibear.setRange(125, "Melee");
+		Volibear.setMoveSpeed(345);
+		Volibear.setHealthInfo(440, 86, 7, 0.65);
+		Volibear.setManaInfo(220, 30, 7, 0.65, "Mana");
+		Volibear.setMagicRes(30, 1.25);
+		
+		ChampionInfo Warwick = new ChampionInfo(); 
+		Warwick.setNameTitle("Warwick", "the Blood Hunter");
+		Warwick.setTypes("Fighter", "Tank");
+		Warwick.setInfo(7, 4, 4, 2);
+		Warwick.setAttackDam(56.76, 3.375);
+		Warwick.setAttackSpeed(0.679, 2.88);
+		Warwick.setArmor(20, 3.5);
+		Warwick.setRange(125, "Melee");
+		Warwick.setMoveSpeed(345);
+		Warwick.setHealthInfo(428, 98, 7.05, 0.8);
+		Warwick.setManaInfo(190, 30, 7.1, 0.6, "Mana");
+		Warwick.setMagicRes(30, 1.25);
+		
+		ChampionInfo Wukong = new ChampionInfo(); 
+		Wukong.setNameTitle("Wukong", "the Monkey King");
+		Wukong.setTypes("Fighter", "Tank");
+		Wukong.setInfo(8, 5, 2, 3);
+		Wukong.setAttackDam(54.5, 3.2);
+		Wukong.setAttackSpeed(0.658, 3);
+		Wukong.setArmor(19, 3.5);
+		Wukong.setRange(175, ""); // no range type
+		Wukong.setMoveSpeed(345);
+		Wukong.setHealthInfo(435, 85, 5.1, 0.65);
+		Wukong.setManaInfo(202, 38, 6.95, 0.65, "Mana");
+		Wukong.setMagicRes(30, 1.25);
+		
+		ChampionInfo Xerath = new ChampionInfo(); 
+		Xerath.setNameTitle("Xerath", "the Mague Ascendant");
+		Xerath.setTypes("Mage", "Assassin");
+		Xerath.setInfo(1, 3, 10, 6);
+		Xerath.setAttackDam(51.66, 3);
+		Xerath.setAttackSpeed(0.625, 1.36);
+		Xerath.setArmor(16, 3.5);
+		Xerath.setRange(525, "Ranged");
+		Xerath.setMoveSpeed(340);
+		Xerath.setHealthInfo(380, 80, 4.5, 0.55);
+		Xerath.setManaInfo(238, 47, 6, 0.65, "Mana");
+		Xerath.setMagicRes(30, 0);
+
+		ChampionInfo XinZhao = new ChampionInfo(); 
+		XinZhao.setNameTitle("Xin Zhao", "the Seneschal of Demacia");
+		XinZhao.setTypes("Fighter", "Assassin");
+		XinZhao.setInfo(8, 6, 3, 3);
+		XinZhao.setAttackDam(52, 3.3);
+		XinZhao.setAttackSpeed(0.672, 2.6);
+		XinZhao.setArmor(20, 3.5);
+		XinZhao.setRange(175, "");
+		XinZhao.setMoveSpeed(345);
+		XinZhao.setHealthInfo(445, 87, 7, 0.7);
+		XinZhao.setManaInfo(215, 35, 6.5, 0.45, "Mana");
+		XinZhao.setMagicRes(30, 1.25);
+		
+		ChampionInfo Yasuo = new ChampionInfo(); 
+		Yasuo.setNameTitle("Yasuo", "the Unforgiven");
+		Yasuo.setTypes("Fighter", "Assassin");
+		Yasuo.setInfo(8, 4, 4, 8);
+		Yasuo.setAttackDam(50, 3.2);
+		Yasuo.setAttackSpeed(0.658, 3.2);
+		Yasuo.setArmor(19, 3.4);
+		Yasuo.setRange(175, "Melee");
+		Yasuo.setMoveSpeed(350);
+		Yasuo.setHealthInfo(430, 82, 5, 0.9);
+		Yasuo.setManaInfo(0, 0, 0, 0, "No Resource");
+		Yasuo.setMagicRes(30, 0);
+		
+		ChampionInfo Yorick = new ChampionInfo(); 
+		Yorick.setNameTitle("Yorick", "the Gravedigger");
+		Yorick.setTypes("Fighter", "Mage");
+		Yorick.setInfo(6, 6, 6, 3);
+		Yorick.setAttackDam(51.7, 3.5);
+		Yorick.setAttackSpeed(0.625, 3);
+		Yorick.setArmor(19, 3.6);
+		Yorick.setRange(125, "");
+		Yorick.setMoveSpeed(345);
+		Yorick.setHealthInfo(421, 85, 7, 0.7);
+		Yorick.setManaInfo(235, 35, 6, 0.45, "Mana");
+		Yorick.setMagicRes(30, 1.25);
+		
+		ChampionInfo Zac = new ChampionInfo(); 
+		Zac.setNameTitle("Zac", "the Secret Weapon");
+		Zac.setTypes("Tank", "Fighter");
+		Zac.setInfo(3, 7, 7, 6);
+		Zac.setAttackDam(54, 3.375);
+		Zac.setAttackSpeed(0.638, 1.6);
+		Zac.setArmor(18, 3.5);
+		Zac.setRange(125, "Melee");
+		Zac.setMoveSpeed(335);
+		Zac.setHealthInfo(455, 95, 7, 0.55);
+		Zac.setManaInfo(0, 0, 0, 0, "Health");
+		Zac.setMagicRes(30, 1.25);
+		
+		ChampionInfo Zed = new ChampionInfo(); 
+		Zed.setNameTitle("Zed", "the Master of Shadows");
+		Zed.setTypes("Assassin", "Fighter");
+		Zed.setInfo(9, 2, 1, 9);
+		Zed.setAttackDam(49, 3.4);
+		Zed.setAttackSpeed(0.658, 3.1);
+		Zed.setArmor(21, 3.5);
+		Zed.setRange(125, "Melee");
+		Zed.setMoveSpeed(345);
+		Zed.setHealthInfo(445, 80, 6, 0.65);
+		Zed.setManaInfo(200, 0, 50, 0, "Energy");
+		Zed.setMagicRes(30, 1.25);
+		
+		ChampionInfo Ziggs = new ChampionInfo(); 
+		Ziggs.setNameTitle("Ziggs", "the Hexplosives Expert");
+		Ziggs.setTypes("Mage", "");
+		Ziggs.setInfo(2, 4, 9, 6);
+		Ziggs.setAttackDam(51, 3.1);
+		Ziggs.setAttackSpeed(0.656, 2);
+		Ziggs.setArmor(16, 3.3);
+		Ziggs.setRange(550, "Ranged");
+		Ziggs.setMoveSpeed(330);
+		Ziggs.setHealthInfo(390, 80, 5.25, 0.6);
+		Ziggs.setManaInfo(250, 50, 6.75, 0.6, "Mana");
+		Ziggs.setMagicRes(30, 0);
+		
+		ChampionInfo Zilean = new ChampionInfo(); 
+		Zilean.setNameTitle("Zilean", "the Chronokeeper");
+		Zilean.setTypes("Support", "Mage");
+		Zilean.setInfo(2, 5, 8, 4);
+		Zilean.setAttackDam(48.6, 3);
+		Zilean.setAttackSpeed(0.625, 2.13);
+		Zilean.setArmor(10.75, 3.8);
+		Zilean.setRange(600, "Ranged");
+		Zilean.setMoveSpeed(335);
+		Zilean.setHealthInfo(380, 71, 4.6, 0.5);
+		Zilean.setManaInfo(260, 60, 6.95, 0.65, "Mana");
+		Zilean.setMagicRes(30, 0);
+		
+		ChampionInfo Zyra = new ChampionInfo(); 
+		Zyra.setNameTitle("Zyra", "Rise of the Thorns");
+		Zyra.setTypes("Mage", "Support");
+		Zyra.setInfo(4, 3, 8, 7);
+		Zyra.setAttackDam(50, 3.2);
+		Zyra.setAttackSpeed(0.625, 2.11);
+		Zyra.setArmor(15, 3);
+		Zyra.setRange(575, "Ranged");
+		Zyra.setMoveSpeed(325);
+		Zyra.setHealthInfo(355, 74, 4.85, 0.5);
+		Zyra.setManaInfo(250, 50, 7.1, 0.75, "Mana");
+		Zyra.setMagicRes(30,0);
+		
 	}
 
 	public ChapmpionInfo[] getChampList()

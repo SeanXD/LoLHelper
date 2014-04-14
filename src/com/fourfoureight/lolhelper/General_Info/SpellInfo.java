@@ -6,7 +6,7 @@ private String cost;
 
 private String cooldown;
 
-private int range;
+private String range;
 private String statsPerLevel [];
 
 //We need to figure out how we will be displaying the spell image: URL or storing the image in our app
@@ -18,7 +18,7 @@ public SpellInfo()
 	range = 0; 	
 }
 
-public SpellInfo(String n, int r, String cd, String cos, String sPL[], String d[])
+public SpellInfo(String n, String r, String cd, String cos, String sPL[], String d[])
 {
 	name = n;
 	range = r; 
@@ -58,7 +58,7 @@ public void setCoolDown(String cool)
 {
 	cooldown = cool;
 }
-public void setSpellRange(int spellRange)
+public void setSpellRange(String spellRange)
 {
 	range = spellRange; 
 }
@@ -91,7 +91,7 @@ public String getCoolDown()
 {
 	return cooldown;
 }
-public int getSpellRange()
+public String getSpellRange()
 {
 	return range;
 }

@@ -22,7 +22,7 @@ private double magicRes;
 //Health and Magic Stats
 private double healthPerLevel;
 private double healthRegenPerLevel;
-private String typeOfMana; //could be energy or mana
+private String typeOfMana; //could be energy or mana or health or fury
 private double manaPerLevel;
 private double manaRegenPerLevel;
 private double attackDamPerLevel;
@@ -39,6 +39,8 @@ private int magicAbility;
 //Spells
 private SpellInfo spells [];
 
+//Icons
+private String image;
 
 //We need to figure out how we will be displaying the champion image: URL or storing the image in our app
 //Note: Any setter with a Growth input. The Growth input is the increase in
@@ -64,7 +66,8 @@ public ChampionInfo()
 	defense = 0; 
 	difficulty = 0; 
 	magicAbility = 0; 
-
+	spells = null;
+	image = null;
 }
 
 
@@ -157,6 +160,10 @@ public void setSpells(SpellInfo spellArray [] )
 	}
 }
 
+public void setImagePath(String path)
+{
+	image = path;
+}
 
 //getters for names/titles
 public String getName()
@@ -309,5 +316,11 @@ public double getMoveSpeed()
 public SpellInfo[] getSpells()
 {
 	return spells;
+}
+
+//Image
+public String getImagePath()
+{
+	return image;
 }
 }

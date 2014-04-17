@@ -14,6 +14,7 @@
         android:id="@+id/button1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:onClick="ingame" 
         android:text="In Game" />
 
@@ -21,38 +22,64 @@
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:onClick="championselect" 
         android:text="Champion Select" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"		android:onClick="postgame" 
+        android:layout_height="wrap_content"
+        android:layout_weight="1"		android:onClick="postgame" 
         android:text="Post Game" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:onClick="generalinfo" 
         android:text="General Info" />
+    
+            	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="2"
+	        android:orientation="horizontal" >
+	        	<LinearLayout
+	        	    android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:layout_weight="4"
+		            android:orientation="vertical" ></LinearLayout>
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Champions" />
+		       <LinearLayout
+		           android:layout_width="match_parent"
+		           android:layout_height="match_parent"
+		           android:layout_weight="1"
+		           android:orientation="vertical" >
 
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Items" />
+					<Button
+				        android:id="@+id/button5"
+				        android:layout_width="match_parent"
+				        android:layout_height="wrap_content"
+				        android:layout_weight="1"
+				        android:text="Champions" />
+				
+				    <Button
+				        android:id="@+id/button6"
+				        android:layout_width="match_parent"
+				        android:layout_height="wrap_content"
+				        android:layout_weight="1"
+				        android:text="Items" />
+		       </LinearLayout>
+
+	    </LinearLayout>
 
     <Button
         android:id="@+id/button7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:onClick="options" 
         android:text="Options" />
 
